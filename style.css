@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 1px;
+    height: 100vh;
+    width: 90vw;
+    background-color: rgb(240, 194, 134);
+}
+
+.sky {
+    background-color: #87CEEB; /* Light blue color for the sky */
+    grid-row: 1 / 7;
+    grid-column: 1 / 11;
+}
+
+.grass {
+    background-color: #64ba93; /* Green color for the grass */
+    grid-row: 7 / 8;
+    grid-column: 1 / 11;
+}
+
+.stone {
+    background-color: rgb(194, 191, 191); /* Gray color for the stone */
+    grid-row: 8 / 9;
+    grid-column: 1 / 11;
+}
+
+.dirt {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 equal columns */
+    grid-auto-rows: 1fr; 
+    grid-row: 9/11;
+    grid-column: 1 / 11;
+    background-size: contain;
+}
+.dirt .dirt-cell{
+   
+    background-image: url(assets/assets/soil1.png);
+    background-size: contain;
+    
+   
+  }
+    
+   
+
