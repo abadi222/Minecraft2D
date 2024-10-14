@@ -1,10 +1,14 @@
+body{
+    display: flex;
+    gap:2%;
+}
 .container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-gap: 1px;
     height: 100vh;
-    width: 90vw;
+    width: 80vw;
     background-color: rgb(240, 194, 134);
 }
 
@@ -15,18 +19,36 @@
 }
 
 .grass {
-    background-color: #64ba93; /* Green color for the grass */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 1fr;  
+    background-color: #64ba93(128, 128, 128, 0.486); 
     grid-row: 7 / 8;
     grid-column: 1 / 11;
+    background-size: contain;
+}
+.grass .grass-cell{
+    background-image: url(assets/grass1.png);
+    background-size: contain;
 }
 
 .stone {
-    background-color: rgb(194, 191, 191); /* Gray color for the stone */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 1fr;  
+    background-color: rgba(128, 128, 128, 0.486);
     grid-row: 8 / 9;
     grid-column: 1 / 11;
+    background-size: contain;
+
+
+}
+.stone .stone-cell{
+    background-image: url(assets/Stone.jpg);
+    background-size: contain;
 }
 
-.dirt {
+.soil {
     display: grid;
     grid-template-columns: repeat(10, 1fr); /* 10 equal columns */
     grid-auto-rows: 1fr; 
@@ -34,13 +56,67 @@
     grid-column: 1 / 11;
     background-size: contain;
 }
-.dirt .dirt-cell{
-   
-    background-image: url(assets/assets/soil1.png);
+.soil .soil-cell{
+    background-image: url(assets/soil1.png);
     background-size: contain;
     
    
   }
-    
-   
+    .nav-Tools{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items:center;
+        height: 100vh;
+        width: 10vw;
+        background-color: rgba(128, 128, 128, 0.444);
+    }
+    .button{
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+    }
+       .tools{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    } 
+    #axe{
+         background-image: url(assets/axe.png);
+    }
+
+    #pickaxe{
+        background-image: url(assets/pickaxe.png);
+    }
+
+   #shovel{
+        background-image: url(assets/shovel.png);
+    }
+
+    .tiles{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #Soil{
+        background-image: url(assets/soil1.png);
+    background-size: contain;
+    }
+    #Stone{
+        background-image: url(assets/Stone.jpg);
+        background-size: contain;
+    }
+    #Grass{
+        background-image: url(assets/grass1.png);
+        background-size: contain;
+    }
+    #Wood{
+        background-image: url(assets/wood.png);
+        background-size: contain;
+    }
+    #Leaf{
+        background-image: url(assets/leaves.png);
+        background-size: contain;
+    }
+
 
