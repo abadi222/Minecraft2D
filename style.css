@@ -13,9 +13,17 @@ body{
 }
 
 .sky {
-    background-color: #87CEEB; /* Light blue color for the sky */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 1fr; 
+    background-color: rgb(38, 186, 249); 
     grid-row: 1 / 7;
     grid-column: 1 / 11;
+    background-size: contain;
+}
+.sky .sky-cell{
+    background-size: contain;
+
 }
 
 .grass {
